@@ -1,0 +1,12 @@
+FrmWebService = 52, 52, 807, 472, C, 26, 26, 781, 446, C
+basMain = 104, 104, 859, 524, C
+JSON_RoutineClass = 130, 130, 1310, 550, C
+JSONScript = 26, 26, 917, 290, C
+StringBuilder = 156, 156, 833, 576, C
+XML_Class = 52, 52, 943, 316, C
+Inet = 156, 156, 833, 576, C
+FrmBusy = 52, 52, 729, 472, C, 26, 26, 703, 446, C
+MdiMain = 130, 130, 807, 550, Z, 156, 156, 833, 576, C
+FrmRota = 182, 182, 1226, 602, C, 0, 0, 677, 420, C
+IPAGE_MaskEdit = 104, 104, 781, 524, C
+MicrosoftADOBas = 26, 26, 703, 446, C

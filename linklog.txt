@@ -1,0 +1,8 @@
+-----------------------
+invoked @ 27/07/2019 12:28:29  -  Command Line: "C:\xampp\htdocs\ipagesoftware.com.br\2019\abr\sci\resource\cep\IpageWebService.OBJ"    /ENTRY:__vbaS /OUT:"C:\xampp\htdocs\ipagesoftware.com.br\2019\abr\sci\resource\cep\IpageWebService.exe" /BASE:0x400000 /SUBSYSTEM:WINDOWS,4.0 /VERSION:1.0   /INCREMENTAL:NO /OPT:REF /MERGE:.rdata=.text /IGNORE:4078 
+build for windows subsystem @ 27/07/2019 12:28:30  -  command line: "C:\xampp\htdocs\ipagesoftware.com.br\2019\abr\sci\resource\cep\IpageWebService.OBJ"    /ENTRY:__vbaS /OUT:"C:\xampp\htdocs\ipagesoftware.com.br\2019\abr\sci\resource\cep\IpageWebService.exe" /BASE:0x400000 /SUBSYSTEM:WINDOWS,4.0 /VERSION:1.0   /INCREMENTAL:NO /OPT:REF /MERGE:.rdata=.text /IGNORE:4078   -  OutPath: C:\xampp\htdocs\ipagesoftware.com.br\2019\abr\sci\resource\cep
+build done @ 27/07/2019 12:28:32
+-----------------------
+invoked @ 27/07/2019 13:00:23  -  Command Line: "C:\xampp\htdocs\ipagesoftware.com.br\2019\abr\sci\resource\cep\IpageWebService.OBJ"    /ENTRY:__vbaS /OUT:"C:\xampp\htdocs\ipagesoftware.com.br\2019\abr\sci\resource\cep\IpageWebService.exe" /BASE:0x400000 /SUBSYSTEM:WINDOWS,4.0 /VERSION:1.0   /INCREMENTAL:NO /OPT:REF /MERGE:.rdata=.text /IGNORE:4078 
+build for windows subsystem @ 27/07/2019 13:18:38  -  command line: "C:\xampp\htdocs\ipagesoftware.com.br\2019\abr\sci\resource\cep\IpageWebService.OBJ"    /ENTRY:__vbaS /OUT:"C:\xampp\htdocs\ipagesoftware.com.br\2019\abr\sci\resource\cep\IpageWebService.exe" /BASE:0x400000 /SUBSYSTEM:WINDOWS,4.0 /VERSION:1.0   /INCREMENTAL:NO /OPT:REF /MERGE:.rdata=.text /IGNORE:4078   -  OutPath: C:\xampp\htdocs\ipagesoftware.com.br\2019\abr\sci\resource\cep
+build done @ 27/07/2019 13:18:40
