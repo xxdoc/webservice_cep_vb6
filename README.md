@@ -10,7 +10,7 @@ O CEP informado deve conter apenas números com até 08 (oito caracateres), em c
 O formato a ser retornado pela consulta deve ser passado na URL junto com o CEP e deve ser compatível com o esperado pelo Web Service.
 Os valores válidos são: XML, JSON, JavaScript, formato texto PIPED, formato texto Querty.
 
-A chave de acesso ao Web Service é obrigatória e deve ser passada na URL junto com o CEP, formato de retorno e deve ser compatível com o esperado pelo Web Service. Caso não possua uma chave de acesso, solicite no site da ipage: https://www.ipage.com.br
+A chave de acesso ao Web Service é obrigatória e deve ser passada na URL junto com o CEP, formato de retorno e deve ser compatível com o esperado pelo Web Service. Caso não possua uma chave de acesso, solicite no site da ipage: https://rapidapi.com/diogenes/api/ipage_cep/details
 
 O projeto é bastante rico em técnicas de programação.
 São elas:
