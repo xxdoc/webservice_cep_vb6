@@ -145,7 +145,7 @@ Begin VB.Form FrmRota
          Alignment       =   1  'Right Justify
          AutoSize        =   -1  'True
          BackStyle       =   0  'Transparent
-         Caption         =   "TOTAL CUSTO COMBUSTÕVEL R$:"
+         Caption         =   "TOTAL CUSTO COMBUST√çVEL R$:"
          ForeColor       =   &H00004000&
          Height          =   225
          Index           =   5
@@ -158,7 +158,7 @@ Begin VB.Form FrmRota
          Alignment       =   1  'Right Justify
          AutoSize        =   -1  'True
          BackStyle       =   0  'Transparent
-         Caption         =   "VALOR COMBUSTÕVEL POR KM RODADO R$:"
+         Caption         =   "VALOR COMBUST√çVEL POR KM RODADO R$:"
          ForeColor       =   &H00004000&
          Height          =   225
          Index           =   2
@@ -170,7 +170,7 @@ Begin VB.Form FrmRota
       Begin VB.Label lblLabels 
          Alignment       =   1  'Right Justify
          BackStyle       =   0  'Transparent
-         Caption         =   "DIST¬NCIA EM KM:"
+         Caption         =   "DIST√ÇNCIA EM KM:"
          ForeColor       =   &H00004000&
          Height          =   225
          Index           =   3
@@ -228,11 +228,11 @@ Attribute VB_Exposed = False
 '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 '> Nome          : FrmRota
 '> Data e Hora   : 27/07/2019 10:50
-'> Autor         : DiÛgenes Dias de Souza J˙nior                          <
-'> DescriÁ„o     :
+'> Autor         : Di√≥genes Dias de Souza J√∫nior                          <
+'> Descri√ß√£o     :
 '> Modificada em : 27/07/2019 10:50
 '>                                                                        <
-'> © Copyright IPAGE - AutomaÁ„o Comercial, Cursos e SoluÁıes para WEB    <
+'> ¬© Copyright IPAGE - Automa√ß√£o Comercial, Cursos e Solu√ß√µes para WEB    <
 '> email: diogenesdias@hotmail.com                                        <
 '>                                                                        <
 '\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
@@ -244,15 +244,15 @@ Private CMask  As New IPAGE_MaskEdit
 '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 '> Nome                  : WebService_Request
 '> Data/Hora             : 27/07/2019 10:50
-'> Autor                 : DiÛgenes Dias de Souza J˙nior
-'> DescriÁ„o             :
-'> Par‚metros Passados   :
-'> Par‚metros Retornados :
-'> DependÍncias          :
+'> Autor                 : Di√≥genes Dias de Souza J√∫nior
+'> Descri√ß√£o             :
+'> Par√¢metros Passados   :
+'> Par√¢metros Retornados :
+'> Depend√™ncias          :
 '> Categoria             :
 '> Modificada em         : 27/07/2019 10:50
 '>                                                                        <
-'> © Copyright IPAGE - AutomaÁ„o Comercial, Cursos e SoluÁıes para WEB    <
+'> ¬© Copyright IPAGE - Automa√ß√£o Comercial, Cursos e Solu√ß√µes para WEB    <
 '> email: diogenesdias@hotmail.com                                        <
 '>                                                                        <
 '\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
@@ -260,7 +260,7 @@ Private CMask  As New IPAGE_MaskEdit
 Private Sub WebService_Request(ByVal m_Cep As String, ByVal Lst As ListBox)
   '
   '/\/\/\/\/\/\/\/\/\/\/\/\
-  '> DECLARA«√O VARI¡VEIS <
+  '> DECLARA√á√ÉO VARI√ÅVEIS <
   '/\/\/\/\/\/\/\/\/\/\/\/\
   '
   Dim cXML     As New XML_Class
@@ -279,14 +279,10 @@ Private Sub WebService_Request(ByVal m_Cep As String, ByVal Lst As ListBox)
   LGateWay = "https://www.ipage.com.br/ws/v1/cep/" & m_Cep & "/json/2e3da304a5e311e98df5289a8be9ede8/"
   '
   With cXML
-    'M…TODO GET
+    'M√âTODO GET
     .objHTTPRequest.Open "GET", LGateWay, False
     .objHTTPRequest.setRequestHeader "Content-Type", "text/plain; charset=UTF-8"
     .objHTTPRequest.send (vbNull)
-    '
-    '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-    '> RETORNA O N⁄MERO DE DIAS PARA A DLL EXPIRAR <
-    '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
     '
     If .objHTTPRequest.ReadyState = 4 Then
       If .objHTTPRequest.Status = 200 Then  'ok
@@ -328,7 +324,7 @@ LogErrorHandler:
   Unload FrmBusy
   '
   If Err.Number = -2147012894 Then
-    MsgBox "Esta requisiÁ„o est· demorando mais do que o esperado, tente mais tarde!", vbExclamation, "Servidor ocupado"
+    MsgBox "Esta requisi√ß√£o est√° demorando mais do que o esperado, tente mais tarde!", vbExclamation, "Servidor ocupado"
     Err.Clear
     Call cXML.objHTTPRequest.abort
     Exit Sub
@@ -352,15 +348,15 @@ End Sub
 '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 '> Nome                  : Distance_Request
 '> Data/Hora             : 27/07/2019 10:50
-'> Autor                 : DiÛgenes Dias de Souza J˙nior
-'> DescriÁ„o             :
-'> Par‚metros Passados   :
-'> Par‚metros Retornados :
-'> DependÍncias          :
+'> Autor                 : Di√≥genes Dias de Souza J√∫nior
+'> Descri√ß√£o             :
+'> Par√¢metros Passados   :
+'> Par√¢metros Retornados :
+'> Depend√™ncias          :
 '> Categoria             :
 '> Modificada em         : 27/07/2019 10:50
 '>                                                                        <
-'> © Copyright IPAGE - AutomaÁ„o Comercial, Cursos e SoluÁıes para WEB    <
+'> ¬© Copyright IPAGE - Automa√ß√£o Comercial, Cursos e Solu√ß√µes para WEB    <
 '> email: diogenesdias@hotmail.com                                        <
 '>                                                                        <
 '\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
@@ -368,7 +364,7 @@ End Sub
 Private Sub Distance_Request(ByVal m_origem As String, ByVal m_destino As String)
   '
   '/\/\/\/\/\/\/\/\/\/\/\/\
-  '> DECLARA«√O VARI¡VEIS <
+  '> DECLARA√á√ÉO VARI√ÅVEIS <
   '/\/\/\/\/\/\/\/\/\/\/\/\
   '
   Dim cXML     As New XML_Class
@@ -387,7 +383,7 @@ Private Sub Distance_Request(ByVal m_origem As String, ByVal m_destino As String
   LGateWay = "https://www.ipage.com.br/ws/v1/rota/" & m_origem & "+" & m_destino & "/" & valor_gas & "/2e3da304a5e311e98df5289a8be9ede8/"
   '
   With cXML
-    'M…TODO GET
+    'M√âTODO GET
     Parameters = vbNull
     .objHTTPRequest.Open "GET", LGateWay, False
     .objHTTPRequest.setRequestHeader "Content-Type", "application/json; charset=UTF-8"
@@ -395,7 +391,7 @@ Private Sub Distance_Request(ByVal m_origem As String, ByVal m_destino As String
     .objHTTPRequest.send (Parameters)
     '
     '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-    '> RETORNA O N⁄MERO DE DIAS PARA A DLL EXPIRAR <
+    '> RETORNA O N√öMERO DE DIAS PARA A DLL EXPIRAR <
     '/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
     '
     If .objHTTPRequest.ReadyState = 4 Then
@@ -423,7 +419,7 @@ Private Sub Distance_Request(ByVal m_origem As String, ByVal m_destino As String
         Me.total_valor_gas.Text = Json.Item("ab").Item("total")
 
       ElseIf .objHTTPRequest.Status = 404 Then  'ok
-        MsgBox "P·gina n„o encontrada, verifique se o endereÁo ou se todos os par‚metros est„o corretos!", vbCritical
+        MsgBox "P√°gina n√£o encontrada, verifique se o endere√ßo ou se todos os par√¢metros est√£o corretos!", vbCritical
       End If
     End If
   End With
@@ -438,7 +434,7 @@ LogErrorHandler:
   Unload FrmBusy
   '
   If Err.Number = -2147012894 Then
-    MsgBox "Esta requisiÁ„o est· demorando mais do que o esperado, tente mais tarde!", vbExclamation, "Servidor ocupado"
+    MsgBox "Esta requisi√ß√£o est√° demorando mais do que o esperado, tente mais tarde!", vbExclamation, "Servidor ocupado"
     Err.Clear
     Call cXML.objHTTPRequest.abort
     Exit Sub
@@ -541,7 +537,7 @@ End Sub
 
 Private Sub valor_gas_KeyPress(KeyAscii As Integer)
   If KeyAscii = vbKeyReturn Then Command1_Click
-  CMask.mask valor_gas, KeyAscii, "C"  ',  "Ä$."
+  CMask.mask valor_gas, KeyAscii, "C"  ',  "¬Ä$."
 End Sub
 
 Private Sub valor_gas_LostFocus()
